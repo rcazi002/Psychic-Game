@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spychic Game</title>
+
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/reset.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body id="bod">
+		<h1>The Psychic Game</h1>
+
+	<p>Guess what letter I'm thinking of</p>
+	<p>Wins: <span id="wins"><strong>0</strong></span></p>
+	<p>Losses: <span id="losses"><strong>0</strong></span</p>
+	<p>Guesses Left :<span id="guesses"><strong>9</strong></span</p>
+	<p>Your Guesses so far : <span id="guessofar"><strong></strong></span</p>
+
+   <script src="assets/javascript/game.js"></script>
+   <script type="text/javascript">
+       document.onkeyup = function(event) {
+       GetKey(event.key);
+      };
+   </script>
+</body>
+</html>
